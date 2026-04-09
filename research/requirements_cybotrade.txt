@@ -1,0 +1,4 @@
+# Cybotrade extraction/research dependencies
+cybotrade-datasource
+pandas
+numpy
