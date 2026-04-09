@@ -62,3 +62,18 @@ python research/cybotrade_5m_scalping_research.py \
 - https://docs.cybotrade.rs/python/faq
 
 > 重要：無法保證任何策略一定達標，腳本會在搜尋上限內盡量研究；若仍未達標，代表該資料區間/成本假設下尚無穩健方案。
+
+## 一鍵報告輸出
+
+研究完後，直接執行：
+
+```bash
+python research/generate_strategy_report.py \
+  --input research/output/iterative_test_results.csv \
+  --output-dir research/output \
+  --top-n 10
+```
+
+會輸出：
+- `research/output/strategy_report.md`
+- `research/output/strategy_report_summary.json`
